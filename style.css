@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+.main{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0.3)), url("images/bg-image.jpg");
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 36px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 16px;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+.logo img{
+    width: 100px;
+    float: left;
+    height: auto;
+}
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 30px;
+    display: inline-block;
+    color: #fff;
+}
+.welcome-text a:hover{
+    background: #fff;
+    color: #333;
+}
+body{
+    background-color: rgba(0,0,0,0.1);
+}
+.about-intro{
+    margin: 30px;
+}
+.about-intro h1{
+    text-align: center;
+}
+.about-intro-text{
+    padding: 10px;
+}
+.about-intro-text a{
+    display: inline-block;
+    color: #ff0050;
+}
+.testimonials{
+    overflow: hidden;
+    text-align: center;
+    background: #34495e;
+    padding: 60px;
+} 
+.testimonials h1{
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: white;
+    font-size: 40px;
+}
+.border{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: #3498db;
+    margin-bottom: 40px;
+}
+.people a{
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.people a img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+} 
+.people a:hover > img{
+    filter: none;
+}
+.section{
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+}
+.section:target{
+    height: auto;
+}
+.name{
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.latest-news-area{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 20px;
+}
+.latest-news-wrap{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.news-img{
+    position: relative;
+}
+.news-img:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    content: "";
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.4;
+}
+.latest-news-wrap:hover .news-img:before{
+    opacity: 0.5;
+    transform: scale(1);
+}
+.date{
+    background: #f89406 none repeat scroll 0 0;
+    height: 70px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    padding: 10px;
+}
+.date span{
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+.news-content{
+    padding: 20px;
+    margin-left: 3px;
+}
+.news-content i{
+    font-size: 18px;
+    display: inline-block;
+}
+.news-content .fa{
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.news-content .fa-facebook{
+    color: #3b5995;
+}
+.news-content .fa-twitter{
+    color: #0084b4;
+}
+.news-content .fa-linledin{
+    color: #0077b5 ;
+}
+.news-content .fa-youtube{
+    color: red;
+}
+.news-content .fa-whatsapp{
+    color: #34af23;
+}
+.news-content p{
+    margin-bottom: 15px;
+    text-align: justify;
+    margin-top: 20px;
+}
+.news-content a{
+    font-size: 14px;
+    background-color: #e0ad23;
+    padding: 10px 20px;
+    color: white;
+    transition: all 0.5s ease-in;
+}
+.more a{
+    align-items: center;
+    font-size: 14px;
+    background-color: #e0ad23;
+    padding: 10px 20px;
+    color: white;
+}
+.news-content a:hover{
+    font-size: 14px;
+    border: 1px solid #34495e;
+    border-top-right-radius: 20px;
+    background-color: transparent;
+    color: #34495e;
+    text-decoration: none;
+}
